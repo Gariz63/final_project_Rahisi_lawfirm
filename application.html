@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.2/firebase-database.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" href="contact.css"> -->
+    <link rel="stylesheet" href="footer.css">
+    <script src="contact.js" defer></script>
+    <script src="script.js" defer></script>
+    <title>Rahisi Law Firm</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav">
+            <a href="/index.html">
+                <img style="width: 100px; height: 70px;" src="images/plp-logo.png" alt="">
+            </a>
+
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <div class="nav__link hide">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="services.html">Services</a>
+                <a href="signUp.html">Login</a>
+            </div>
+        </nav>
+    </header>
+<body>
+    <style>body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+    }
+    
+   
+    
+    .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background-color: #fff;
+    }
+    
+    form {
+        margin-top: 20px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+    }
+    
+    input[type="submit"] {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+    }
+    
+    input[type="submit"]:hover {
+        background-color: #555;
+    }
+    </style>
+    <body>
+       
+    <div>
+        <div>
+
+        </div>
+    
+    </div>
+    <br><br><br><br><br><br><br><br><br>
+   <center> <h1>Legal Services Application Form</h1></center> 
+    <section class="container">
+        <form action="legal_services_application.php" method="post">
+            <label for="service">Select Service:</label><br>
+            <select id="service" name="service">
+                <option value="legal_advice">Legal Advice and Consultation</option>
+                <option value="representation">Representation in Cour</option>
+                <option value="document_drafting">Document Drafting and Review</option>
+                <option value="legal_advice">Corporate Law Services</option>
+                <option value="representation">Family Law Services</option>
+                <option value="document_drafting">Real Estate Services</option>
+                <option value="legal_advice">Estate Planning and Probate</option>
+                <option value="representation">Intellectual Property Law</option>
+                <option value="document_drafting">Employment Law</option>
+                <option value="legal_advice">Criminal Defense</option>
+                <option value="representation">Personal Injury Claims</option>
+                <option value="document_drafting">Immigration Law Services</option>
+                
+            </select><br><br>
+
+            <label for="username">User Name:</label><br>
+            <input type="text" id="username" name="username" required><br>
+
+            <label for="identity_number">User Identity Number:</label><br>
+            <input type="text" id="identity_number" name="identity_number" required><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="place">Place:</label><br>
+            <input type="text" id="place" name="place" required><br>
+
+            <label for="fees">Application Fees:</label><br>
+            <input type="number" id="fees" name="fees" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+        <ul class="social_icons">
+            <!-- social media icons -->
+            <li class="list">
+                <a class="icon" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </li>
+            <li class="list">
+                <a class="icon" href="#">
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                    </ion-icon>
+                </a>
+            </li>
+            <li class="list">
+                <a class="icon" href="#">
+                    <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+            </li>
+            <li class="list">
+                <a class="icon" href="#">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+            </li>
+        </ul>
+        <!-- home page, about page,contact page and login page -->
+        <ul class="menu">
+            <li class="menu_icons">
+                <a class="tag" href="index.html">Home</a>
+            </li>
+            <li class="menu_icons">
+                <a class="tag" href="about.html">About</a>
+            </li>
+            <li class="menu_icons">
+                <a class="tag" href="contact.html">Contact</a>
+            </li>
+            <li class="menu_icons">
+                <a class="tag" href="signUp.html">Login</a>
+            </li>
+        </ul>
+        <div class="footer-bottom">
+            <!-- copyright section -->
+            <p>copyright&copy;2024 Rahisi LawFirm | designed by <span>EZEMS Tech Developers</span></p>
+        </div>
+    </footer>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</body>
+</html>
